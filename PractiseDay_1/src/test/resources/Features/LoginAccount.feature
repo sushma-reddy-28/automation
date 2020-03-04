@@ -6,8 +6,9 @@ Feature: Login Account Validation
     And User Enter email in your email as "<emailAddress>"
     And user enter password as "<password>"
     And user click on Sign in 
+    And user enter product name  in search as "<productName>"
    Then user should see username on the top left corner in HomePage as"<AccountName>"
 
     Examples: 
-      | emailAddress                     | password          |  AccountName      |
-      | sushma9328@gmail.com             | sushmareddy       |   Hi, Sushma      |
+      | emailAddress                     | password        | productName |  AccountName      |
+      | sushma9328@gmail.com             | sushmareddy     | kurti       |   Hi, Sushma      |

@@ -12,6 +12,12 @@ public class HomePage extends WebDriverUtils implements HomePageProp {
 		this.driver=driver;
 		
 	}
+	
+	public void  searchProductName(String productName)
+	{
+		 enterText(searchLocator, productName);
+	}
+	
 	public String getAccountName()
 	{
 		return getTextValue(usernameLocator);
